@@ -3,15 +3,15 @@
 # by Seth Kenlon for MakerBox.org.nz
 #
 # after installing this file, run this command:
-# $ sudo systemctl enable homeheart
+# $ sudo systemctl enable homewifi
 # 
 
 [Unit]
-Description=Home_is_Where_the_Heart_Is Startup
+Description=Home_is_Where_the_Wifi_Is Startup
 
 [Service]
 Type=idle
-ExecStart=/usr/local/bin/homeheart.py
+ExecStart=/usr/local/bin/homewifi.py
 
 [Install]
 WantedBy=multi-user.target
