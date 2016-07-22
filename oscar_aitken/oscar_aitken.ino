@@ -30,7 +30,7 @@ void loop() {
   Serial.println(sensorValue);
   delay(1);        // delay in between reads for stability
 
-if (sensorValue > 340 ){
+if (sensorValue < 400 ){
     analogWrite(redLEDPin, 0);
   analogWrite(greenLEDPin, 0);
   analogWrite(blueLEDPin, 250);
