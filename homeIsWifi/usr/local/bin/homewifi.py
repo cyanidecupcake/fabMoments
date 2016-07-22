@@ -22,4 +22,4 @@ def switchLighting(x):
 while True:
     for i in pins:
         switchLighting(i)
-        time.sleep(15)
+        time.sleep(2)
