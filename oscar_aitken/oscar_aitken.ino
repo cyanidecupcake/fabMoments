@@ -14,7 +14,7 @@ const int blueLEDPin = 11;    // LED connected to digital pin 11
 // the setup routine runs once when you press reset:
 void setup() {
   // initialize serial communication at 9600 bits per second:
-  Serial.begin(9600);
+  //Serial.begin(9600);
   
   // set the digital pins as outputs
   pinMode(greenLEDPin, OUTPUT);
@@ -24,7 +24,32 @@ void setup() {
 
 // the loop routine runs over and over again forever:
 void loop() {
-  // read the input on analog pin 0:
+    analogWrite(redLEDPin, 0);
+    analogWrite(greenLEDPin, 0);
+    analogWrite(blueLEDPin, 250);
+
+    delay (1600);
+
+    analogWrite(redLEDPin, 0);
+    analogWrite(greenLEDPin, 125);
+    analogWrite(blueLEDPin, 0);
+  
+    delay (1600);
+
+    analogWrite(redLEDPin, 62);
+    analogWrite(greenLEDPin, 0);
+    analogWrite(blueLEDPin, 0);
+
+    delay (1600);
+
+    analogWrite(redLEDPin, 0);
+    analogWrite(greenLEDPin, 0);
+    analogWrite(blueLEDPin, 0);
+
+    delay (3200);
+
+  
+  /*// read the input on analog pin 0:
   int sensorValue = analogRead(A0);
   // print out the value you read:
   Serial.println(sensorValue);
@@ -53,6 +78,9 @@ else {
   analogWrite(redLEDPin, 0);
   analogWrite(greenLEDPin, 0);
   analogWrite(blueLEDPin, 0);
-}
+}*/
+
+
+
 }
 
